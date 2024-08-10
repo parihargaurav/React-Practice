@@ -15,7 +15,7 @@ const CheckoutStepper = ({stepsConfig = []}) => {
     setMargins({
       marginLeft: stepRef.current[0].offsetWidth / 2,
       marginRight: stepRef.current[stepsConfig.length - 1].offsetWidth / 2,
-    });
+    });  
   }, [stepRef, stepsConfig.length]);
 
   if (!stepsConfig.length) {
